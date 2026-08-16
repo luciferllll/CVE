@@ -1,3 +1,4 @@
+# Unauthenticated Access to /main/index.php Exposes Full Transaction Records (Critical)
 # 1. login.php — Login succeeds but never sets a session (broken authentication)
 ```php
 $result = $conn->prepare("SELECT * FROM user WHERE username= :hjhjhjh AND password= :asas");
@@ -34,3 +35,4 @@ Directly accessing http://10.166.209.241:8081/main/index.php allows unauthorized
 <img width="2230" height="1278" alt="image" src="https://github.com/user-attachments/assets/eb08890c-ac82-4b7c-a7ca-273777f3e8df" />
 Can add, delete, modify, and query.
 <img width="2240" height="1188" alt="image" src="https://github.com/user-attachments/assets/f9910bf1-ed5b-4e5f-9087-a68a4b02cbc2" />
+  [Record_ManagementSystem PHP With Source Code - Source Code & Projects](https://code-projects.org/RECORD-MANAGEMENT-SYSTEM-IN-PHP-WITH-SOURCE-CODE/)
