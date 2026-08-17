@@ -81,4 +81,7 @@ The response shows that the injected payload is stored in the database and later
 - [Record Management System in PHP With Source Code - Source Code & Projects](https://code-projects.org/record-management-system-in-php/)
 ```
 
-![image-20260604115005785](https://raw.githubusercontent.com/zzzxc643/images/main/image/image-20260604115005785.png)
+<img width="1938" height="902" alt="image" src="https://github.com/user-attachments/assets/2596895d-4c03-4290-a84a-7e5ecbc5fd06" />
+<img width="2244" height="892" alt="image" src="https://github.com/user-attachments/assets/1c38e2ff-f616-4a82-941e-522ba7ce061d" />
+
+
