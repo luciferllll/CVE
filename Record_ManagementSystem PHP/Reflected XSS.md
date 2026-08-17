@@ -1,6 +1,6 @@
 
 ---
-Reflected XSS Vulnerability in editform.php of the Record Management System
+#Reflected XSS Vulnerability in editform.php of the Record Management System
 
 The transaction editing function of the Record Management System is handled by editform.php. When a user opens the edit page, the backend reads the id parameter from the URL. In the code, editform.php:3 directly reads this parameter, and editform.php:10 concatenates it into the HTML hidden input value attribute without any output encoding:
 
@@ -11,13 +11,13 @@ $id=$_GET['id'];
 Because the application does not perform HTML escaping or output sanitization, an attacker can inject malough the id parameter,resulting in a reflected Cross-Site Scripting (XSS) vulnerability.            
 This endpoint is linked from the transaction list (main/index.php:120 renders <a rel="facebox" href="edirow['id']; ?>"> Edit </a>for every record), and it requires no authentication — the application performs zero session checo the page is reachable byany visitor.
 
-Impact of the Reflected XSS Vulnerability
+##Impact of the Reflected XSS Vulnerability
 
 An attacker can exploit this vulnerability to execute arbitrary JavaScript in
 the victim's browser withiently opened page. This may lead to session theft, sensitive data disclosure, page content manipulation,
 phishing, or unauthorized lf of the victim.
 
-Payload
+##Payload
 
 Injection parameter: id
 
